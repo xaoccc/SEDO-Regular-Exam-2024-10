@@ -18,3 +18,4 @@ jobs:
       run: dotnet restore
     - name: Build code
       run: dotnet build --no-restore
+    - trash:
