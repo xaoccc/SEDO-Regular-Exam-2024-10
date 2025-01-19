@@ -1,5 +1,5 @@
 name: Run unit tests
-#test
+#github needs workflows in all branches ?
 on:
   workflow_run:
     workflows: ["Build"]
@@ -21,4 +21,4 @@ jobs:
     - name: Build code
       run: dotnet build --no-restore
     - name: Test
-      run: dotnet test --no-build --verbosity normal
+      run: dotnet test HouseRentingSystem.UnitTests/HouseRentingSystem.UnitTests.csproj --no-build --verbosity normal
