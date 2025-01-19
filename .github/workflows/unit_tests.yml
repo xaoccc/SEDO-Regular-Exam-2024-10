@@ -1,5 +1,5 @@
 name: Run unit tests
-#github needs workflows in all branches ?
+#github uses only in main workflows ?
 on:
   workflow_run:
     workflows: ["Build"]
