@@ -5,7 +5,7 @@ on:
     workflows: ["Build"]
     branches: ["develop"]
     types: 
-      - completed
+      - Success
 
 jobs:
   test:
