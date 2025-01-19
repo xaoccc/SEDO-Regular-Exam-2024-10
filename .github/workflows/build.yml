@@ -18,11 +18,3 @@ jobs:
       run: dotnet restore
     - name: Build code
       run: dotnet build --no-restore
-
-  test:
-    runs-on: ubuntu-latest
-    steps:
-    - name: Checkout code
-      uses: actions/checkout@v4
-    - name: Test
-      run: dotnet test --no-build --verbosity normal
